@@ -1,5 +1,5 @@
-import Expenses from "./components/Expenses";
-function App() {
+import Expenses from "./components/Expenses/Expenses";
+const App=() =>{
   const expenses = [
     {id:'0001',title:"Seguro de AUTO",amount:299.99,date:new Date(2022,3,13)},
     {id:'0002',title:"Seguro de VIDA",amount:199.99,date:new Date(2022,3,13)},
