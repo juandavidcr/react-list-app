@@ -1,11 +1,12 @@
 import './ExpenseItem.css';
 import ExpenseDate from './ExpenseDate';
 import Card from '../UI/Card';
-const clickHandler = () =>{
-  console.log("clicked!!!!!!!")
-};
 const ExpenseItem=(props) => {
- 
+  let title = props.title;
+  const clickHandler = () =>{
+    title="updated";
+    console.log(title,"clicked!!!!!!!")
+  };
 
   return (
     <Card className='expense-item'>
