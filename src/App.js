@@ -7,9 +7,14 @@ const App=() =>{
     {id:'0003',title:"Seguro de GMM",amount:499.99,date:new Date(2022,3,13)},
   ];
   
+  const addExpenseHandler = (expense)=>{
+    console.log('In App.js');
+    console.log(expense);
+  };
   return (
      <div>
-      <NewExpense />
+      <NewExpense onAddExpense={addExpenseHandler} />
+      
       <Expenses items={expenses}/>
     </div>
   );
